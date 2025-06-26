@@ -1,17 +1,3 @@
-/*
-STEPS TO CREATE EXPRESS
-1. npm init -y
-2. npm install express
-
-1.Need to create new connection with mongodb://127.0.0.1:27017/expenseDB in MONGO Compass
-2.Use that same url in this code MONGO_URI
-3.Execute this app.js -> new Database and Collections will be created
-4.In that Postman click (+) icon then
-5.First select GET with the url of http://localhost:3000/expense you will get []
-6.Then select POST method to push the document inside the collection in Mongo Compass 
-7.With same url and in the below option select body inside that create a object with {"title":"Rewards","amount":100} like that
-  then click send you will recive the document in the collection
-*/
 const express = require('express');
 const app = express();
 const mongoose = require("mongoose");

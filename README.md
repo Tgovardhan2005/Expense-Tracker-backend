@@ -32,8 +32,6 @@ This repository contains the backend code for the Expense Tracker application. I
    npm start
    ```
 
----
-
 ## API Endpoints
 The following APIs are available:
 

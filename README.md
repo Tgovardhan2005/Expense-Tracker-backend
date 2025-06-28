@@ -1,4 +1,4 @@
-# Expense Tracker Backend
+# Expense Tracker Backend 💲
 
 This repository contains the backend code for the Expense Tracker application. It is built using Node.js, Express.js, and MongoDB, and provides APIs for managing expenses, user authentication, and data storage.
 

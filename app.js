@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require("mongoose");
-const cors=require("cors"); // to execute in multiple platforms
+const cors=require("cors");
 
 const PORT = 3000;
 

@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const MONGO_URI = 'mongodb+srv://govardhant23csr066:passwordforMONGO@cluster0.sbljj.mongodb.net/expenses?retryWrites=true&w=majority&appName=Cluster0';
+const MONGO_URI = 'mongodb+srv://govardhant23csr066:passwordforMONGO@cluster0.sbljj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log("Successfully Connected !!"))

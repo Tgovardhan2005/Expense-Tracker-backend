@@ -5,7 +5,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
-const PORT = 3000;
+const PORT = 3000; 
 const JWT_SECRET = "your_jwt_secret"; // Use env variable in production
 
 app.use(cors());

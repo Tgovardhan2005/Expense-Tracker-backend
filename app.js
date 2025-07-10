@@ -5,14 +5,14 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
-const PORT = 3000; 
-const JWT_SECRET = "your_jwt_secret"; // Use env variable in production
+// Use environment variables for secrets and config
+const PORT = process.env.PORT || 3000;
+const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret"; // Set JWT_SECRET in Render env vars
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://govardhant23csr066:passwordforMONGO@cluster0.sbljj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Set MONGO_URI in Render env vars
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-const MONGO_URI = 'mongodb+srv://govardhant23csr066:passwordforMONGO@cluster0.sbljj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log("Successfully Connected !!"))
@@ -127,3 +127,5 @@ app.delete('/expense/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+
+// Reminder: Set JWT_SECRET and MONGO_URI as environment variables in Render dashboard.

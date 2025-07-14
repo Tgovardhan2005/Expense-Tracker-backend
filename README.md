@@ -7,6 +7,7 @@ This repository contains the backend code for the Expense Tracker application. I
 - **Edit Expense**: API to update existing expense entries.
 - **Delete Expense**: API to remove expense entries.
 - **View Expense History**: API to fetch expense data for analysis.
+- **Authentication**.
  
 ## Setup Instructions
 

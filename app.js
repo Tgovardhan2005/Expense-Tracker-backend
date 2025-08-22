@@ -7,8 +7,8 @@ const bcrypt = require("bcryptjs");
 
 // Use environment variables for secrets and config
 const PORT = process.env.PORT || 3000;
-const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret"; // Set JWT_SECRET in Render env vars
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://govardhant23csr066:passwordforMONGO@cluster0.sbljj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'; // Set MONGO_URI in Render env vars
+const JWT_SECRET = process.env.JWT_SECRET;
+const MONGO_URI = process.env.MONGO_URI ; 
 
 app.use(cors());
 app.use(express.json());
